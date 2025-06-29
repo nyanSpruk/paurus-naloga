@@ -1,0 +1,196 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "code": "CS101",
+            "name": "Introduction to Programming",
+            "professor": "Dr. Ada Lovelace",
+            "credits": 6,
+            "semester": "Fall"
+        },
+        {
+            "id": 2,
+            "code": "CS102",
+            "name": "Data Structures",
+            "professor": "Dr. Alan Turing",
+            "credits": 6,
+            "semester": "Spring"
+        },
+        {
+            "id": 3,
+            "code": "CS201",
+            "name": "Algorithms and Complexity",
+            "professor": "Dr. Alan Turing",
+            "credits": 5,
+            "semester": "Fall"
+        },
+        {
+            "id": 4,
+            "code": "CS210",
+            "name": "Operating Systems",
+            "professor": "Dr. Linus Torvalds",
+            "credits": 5,
+            "semester": "Spring"
+        },
+        {
+            "id": 5,
+            "code": "CS221",
+            "name": "Database Systems",
+            "professor": "Dr. Edgar Codd",
+            "credits": 5,
+            "semester": "Fall"
+        },
+        {
+            "id": 6,
+            "code": "CS301",
+            "name": "Software Engineering",
+            "professor": "Dr. Grace Hopper",
+            "credits": 6,
+            "semester": "Fall"
+        },
+        {
+            "id": 7,
+            "code": "CS331",
+            "name": "Computer Networks",
+            "professor": "Dr. Vint Cerf",
+            "credits": 5,
+            "semester": "Spring"
+        },
+        {
+            "id": 8,
+            "code": "CS350",
+            "name": "Artificial Intelligence",
+            "professor": "Dr. John McCarthy",
+            "credits": 6,
+            "semester": "Fall"
+        },
+        {
+            "id": 9,
+            "code": "MATH242",
+            "name": "Discrete Mathematics",
+            "professor": "Dr. Leonard Euler",
+            "credits": 6,
+            "semester": "Fall"
+        },
+        {
+            "id": 10,
+            "code": "MATH101",
+            "name": "Calculus I",
+            "professor": "Dr. Isaac Newton",
+            "credits": 6,
+            "semester": "Fall"
+        }
+    ],
+    "students": [
+        {
+            "id": 1,
+            "name": "John",
+            "lastname": "Doe",
+            "studentNumber": "63210123",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [3, 4, 5, 9]
+        },
+        {
+            "id": 2,
+            "name": "Jane",
+            "lastname": "Smith",
+            "studentNumber": "63220456",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [6, 7, 8]
+        },
+        {
+            "id": 3,
+            "name": "Peter",
+            "lastname": "Jones",
+            "studentNumber": "63230789",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [1, 10, 9]
+        },
+        {
+            "id": 4,
+            "name": "Mary",
+            "lastname": "Williams",
+            "studentNumber": "63210112",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": [2, 3]
+        },
+        {
+            "id": 5,
+            "name": "David",
+            "lastname": "Brown",
+            "studentNumber": "63200334",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": 6,
+            "name": "Susan",
+            "lastname": "Miller",
+            "studentNumber": "63230556",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [1, 10]
+        },
+        {
+            "id": 7,
+            "name": "Michael",
+            "lastname": "Wilson",
+            "studentNumber": "63220778",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [2, 4, 5, 9]
+        },
+        {
+            "id": 8,
+            "name": "Linda",
+            "lastname": "Taylor",
+            "studentNumber": "63210990",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": [6, 8]
+        },
+        {
+            "id": 9,
+            "name": "Robert",
+            "lastname": "Anderson",
+            "studentNumber": "63231122",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [1, 9, 10]
+        },
+        {
+            "id": 10,
+            "name": "Patricia",
+            "lastname": "Thomas",
+            "studentNumber": "63221334",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [2, 3, 7]
+        }
+    ]
+}
