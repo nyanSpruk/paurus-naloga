@@ -1,7 +1,7 @@
 {
     "courses": [
         {
-            "id": 1,
+            "id": "1",
             "code": "CS101",
             "name": "Introduction to Programming",
             "professor": "Dr. Ada Lovelace",
@@ -9,7 +9,7 @@
             "semester": "Fall"
         },
         {
-            "id": 2,
+            "id": "2",
             "code": "CS102",
             "name": "Data Structures",
             "professor": "Dr. Alan Turing",
@@ -17,7 +17,7 @@
             "semester": "Spring"
         },
         {
-            "id": 3,
+            "id": "3",
             "code": "CS201",
             "name": "Algorithms and Complexity",
             "professor": "Dr. Alan Turing",
@@ -25,7 +25,7 @@
             "semester": "Fall"
         },
         {
-            "id": 4,
+            "id": "4",
             "code": "CS210",
             "name": "Operating Systems",
             "professor": "Dr. Linus Torvalds",
@@ -33,7 +33,7 @@
             "semester": "Spring"
         },
         {
-            "id": 5,
+            "id": "5",
             "code": "CS221",
             "name": "Database Systems",
             "professor": "Dr. Edgar Codd",
@@ -41,7 +41,7 @@
             "semester": "Fall"
         },
         {
-            "id": 6,
+            "id": "6",
             "code": "CS301",
             "name": "Software Engineering",
             "professor": "Dr. Grace Hopper",
@@ -49,7 +49,7 @@
             "semester": "Fall"
         },
         {
-            "id": 7,
+            "id": "7",
             "code": "CS331",
             "name": "Computer Networks",
             "professor": "Dr. Vint Cerf",
@@ -57,7 +57,7 @@
             "semester": "Spring"
         },
         {
-            "id": 8,
+            "id": "8",
             "code": "CS350",
             "name": "Artificial Intelligence",
             "professor": "Dr. John McCarthy",
@@ -65,7 +65,7 @@
             "semester": "Fall"
         },
         {
-            "id": 9,
+            "id": "9",
             "code": "MATH242",
             "name": "Discrete Mathematics",
             "professor": "Dr. Leonard Euler",
@@ -73,7 +73,7 @@
             "semester": "Fall"
         },
         {
-            "id": 10,
+            "id": "10",
             "code": "MATH101",
             "name": "Calculus I",
             "professor": "Dr. Isaac Newton",
@@ -83,7 +83,7 @@
     ],
     "students": [
         {
-            "id": 1,
+            "id": "1",
             "name": "John",
             "lastname": "Doe",
             "studentNumber": "63210123",
@@ -91,10 +91,10 @@
             "year": 2,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [3, 4, 5, 9]
+            "courses": ["2", "3", "9"]
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Jane",
             "lastname": "Smith",
             "studentNumber": "63220456",
@@ -102,10 +102,10 @@
             "year": 3,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [6, 7, 8]
+            "courses": ["6", "7", "8"]
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Peter",
             "lastname": "Jones",
             "studentNumber": "63230789",
@@ -113,10 +113,10 @@
             "year": 1,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [1, 10, 9]
+            "courses": ["1", "10", "9"]
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "Mary",
             "lastname": "Williams",
             "studentNumber": "63210112",
@@ -124,10 +124,10 @@
             "year": 2,
             "status": "Active",
             "enrollment": "Part-time",
-            "courses": [2, 3]
+            "courses": ["2", "3"]
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "David",
             "lastname": "Brown",
             "studentNumber": "63200334",
@@ -138,7 +138,7 @@
             "courses": []
         },
         {
-            "id": 6,
+            "id": "6",
             "name": "Susan",
             "lastname": "Miller",
             "studentNumber": "63230556",
@@ -146,10 +146,10 @@
             "year": 1,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [1, 10]
+            "courses": ["1", "10"]
         },
         {
-            "id": 7,
+            "id": "7",
             "name": "Michael",
             "lastname": "Wilson",
             "studentNumber": "63220778",
@@ -157,10 +157,10 @@
             "year": 2,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [2, 4, 5, 9]
+            "courses": ["2", "4", "5", "9"]
         },
         {
-            "id": 8,
+            "id": "8",
             "name": "Linda",
             "lastname": "Taylor",
             "studentNumber": "63210990",
@@ -168,10 +168,10 @@
             "year": 3,
             "status": "Active",
             "enrollment": "Part-time",
-            "courses": [6, 8]
+            "courses": ["6", "8"]
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "Robert",
             "lastname": "Anderson",
             "studentNumber": "63231122",
@@ -179,10 +179,10 @@
             "year": 1,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [1, 9, 10]
+            "courses": ["1", "9", "10"]
         },
         {
-            "id": 10,
+            "id": "10",
             "name": "Patricia",
             "lastname": "Thomas",
             "studentNumber": "63221334",
@@ -190,7 +190,458 @@
             "year": 2,
             "status": "Active",
             "enrollment": "Full-time",
-            "courses": [2, 3, 7]
+            "courses": ["2", "3", "7"]
+        },
+        {
+            "id": "11",
+            "name": "Deborah",
+            "lastname": "Miller",
+            "studentNumber": "63258908",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["10"]
+        },
+        {
+            "id": "12",
+            "name": "Jessica",
+            "lastname": "Smith",
+            "studentNumber": "63212098",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["6", "2"]
+        },
+        {
+            "id": "13",
+            "name": "Cynthia",
+            "lastname": "Robinson",
+            "studentNumber": "63240279",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Inactive",
+            "enrollment": "Part-time",
+            "courses": ["9", "1", "6"]
+        },
+        {
+            "id": "14",
+            "name": "Brittany",
+            "lastname": "Jackson",
+            "studentNumber": "63266996",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["7", "9"]
+        },
+        {
+            "id": "15",
+            "name": "Heather",
+            "lastname": "Williams",
+            "studentNumber": "63272251",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["6"]
+        },
+        {
+            "id": "16",
+            "name": "Timothy",
+            "lastname": "Jones",
+            "studentNumber": "63212642",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["7", "6", "5", "3"]
+        },
+        {
+            "id": "17",
+            "name": "Kenneth",
+            "lastname": "Morgan",
+            "studentNumber": "63211865",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["4", "1"]
+        },
+        {
+            "id": "18",
+            "name": "Tamara",
+            "lastname": "Evans",
+            "studentNumber": "63289425",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["1", "4", "3", "7"]
+        },
+        {
+            "id": "19",
+            "name": "Jennifer",
+            "lastname": "Arnold",
+            "studentNumber": "63218854",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["10"]
+        },
+        {
+            "id": "20",
+            "name": "Nancy",
+            "lastname": "Miller",
+            "studentNumber": "63287553",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": "21",
+            "name": "Angela",
+            "lastname": "Mora",
+            "studentNumber": "63276937",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": ["2", "1"]
+        },
+        {
+            "id": "22",
+            "name": "Laura",
+            "lastname": "White",
+            "studentNumber": "63281706",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Inactive",
+            "enrollment": "Part-time",
+            "courses": ["6", "9"]
+        },
+        {
+            "id": "23",
+            "name": "Noah",
+            "lastname": "Brown",
+            "studentNumber": "63291880",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["1", "4", "2", "6", "10"]
+        },
+        {
+            "id": "24",
+            "name": "Louis",
+            "lastname": "Watts",
+            "studentNumber": "63281135",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": "25",
+            "name": "Nicole",
+            "lastname": "Roberts",
+            "studentNumber": "63258044",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["1"]
+        },
+        {
+            "id": "26",
+            "name": "Shelby",
+            "lastname": "West",
+            "studentNumber": "63269867",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["10", "4", "9", "1", "8"]
+        },
+        {
+            "id": "27",
+            "name": "Kimberly",
+            "lastname": "Hart",
+            "studentNumber": "63297908",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": "28",
+            "name": "Sue",
+            "lastname": "Acevedo",
+            "studentNumber": "63234328",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": []
+        },
+        {
+            "id": "29",
+            "name": "Tiffany",
+            "lastname": "Jones",
+            "studentNumber": "63248052",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": ["5", "1", "8", "9", "3"]
+        },
+        {
+            "id": "30",
+            "name": "Samantha",
+            "lastname": "Long",
+            "studentNumber": "63247405",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["1", "10"]
+        },
+        {
+            "id": "31",
+            "name": "Laura",
+            "lastname": "Wilson",
+            "studentNumber": "63288059",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": ["3"]
+        },
+        {
+            "id": "32",
+            "name": "Tim",
+            "lastname": "Martin",
+            "studentNumber": "63229070",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Inactive",
+            "enrollment": "Part-time",
+            "courses": ["2", "8", "1", "7", "3"]
+        },
+        {
+            "id": "33",
+            "name": "Alejandro",
+            "lastname": "Bailey",
+            "studentNumber": "63261641",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["6", "1", "8", "3", "5"]
+        },
+        {
+            "id": "34",
+            "name": "Regina",
+            "lastname": "Mercado",
+            "studentNumber": "63271521",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["5", "1"]
+        },
+        {
+            "id": "35",
+            "name": "Melissa",
+            "lastname": "Carey",
+            "studentNumber": "63288058",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": []
+        },
+        {
+            "id": "36",
+            "name": "Mary",
+            "lastname": "Cain",
+            "studentNumber": "63284682",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["9", "10"]
+        },
+        {
+            "id": "37",
+            "name": "Alan",
+            "lastname": "Johnson",
+            "studentNumber": "63285909",
+            "program": "Computer and Information Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["7", "2", "1", "10", "6"]
+        },
+        {
+            "id": "38",
+            "name": "Olivia",
+            "lastname": "Diaz",
+            "studentNumber": "63218359",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": "39",
+            "name": "David",
+            "lastname": "Lawrence",
+            "studentNumber": "63254636",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["9", "3", "6"]
+        },
+        {
+            "id": "40",
+            "name": "Leslie",
+            "lastname": "Lin",
+            "studentNumber": "63257171",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": [7]
+        },
+        {
+            "id": "41",
+            "name": "David",
+            "lastname": "Richards",
+            "studentNumber": "63225609",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["6"]
+        },
+        {
+            "id": "42",
+            "name": "Lacey",
+            "lastname": "Rodriguez",
+            "studentNumber": "63268446",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["3"]
+        },
+        {
+            "id": "43",
+            "name": "Jay",
+            "lastname": "Thomas",
+            "studentNumber": "63243154",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["7", "4", "8", "6"]
+        },
+        {
+            "id": "44",
+            "name": "Laura",
+            "lastname": "Smith",
+            "studentNumber": "63219019",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": []
+        },
+        {
+            "id": "45",
+            "name": "Christopher",
+            "lastname": "Li",
+            "studentNumber": "63276298",
+            "program": "Computer and Information Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["7", "9", "3"]
+        },
+        {
+            "id": "46",
+            "name": "Tyler",
+            "lastname": "Foster",
+            "studentNumber": "63261142",
+            "program": "Computer and Mathematical Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["4"]
+        },
+        {
+            "id": "47",
+            "name": "David",
+            "lastname": "Bailey",
+            "studentNumber": "63282185",
+            "program": "Computer and Mathematical Science",
+            "year": 1,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["5"]
+        },
+        {
+            "id": "48",
+            "name": "Maria",
+            "lastname": "Wood",
+            "studentNumber": "63244418",
+            "program": "Computer and Information Science",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Part-time",
+            "courses": ["6", "1", "8", "3"]
+        },
+        {
+            "id": "49",
+            "name": "Brittany",
+            "lastname": "Wilson",
+            "studentNumber": "63271669",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Inactive",
+            "enrollment": "Full-time",
+            "courses": ["10", "9"]
+        },
+        {
+            "id": "50",
+            "name": "Andrew",
+            "lastname": "Kennedy",
+            "studentNumber": "63240160",
+            "program": "Computer and Mathematical Science",
+            "year": 2,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["9", "6", "8", "2", "5"]
+        },
+        {
+            "id": "99a0",
+            "name": "Alice",
+            "lastname": "Wonderland",
+            "studentNumber": "63210789",
+            "program": "Digital Arts",
+            "year": 3,
+            "status": "Active",
+            "enrollment": "Full-time",
+            "courses": ["2", "6", "8"]
         }
     ]
 }
