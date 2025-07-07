@@ -1,6 +1,6 @@
 <div class="card">
   <p-table [value]="students" [lazy]="true" (onLazyLoad)="lazyLoadStudents($event)" [paginator]="true" [rows]="rows"
-    [totalRecords]="totalRecords" [loading]="loading" [showCurrentPageReport]="true"
+    [totalRecords]="totalRecords" [loading]="loading" [showCurrentPageReport]="true" dataKey="id"
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[20, 40, 60]"
     paginatorDropdownAppendTo="body">
     <ng-template pTemplate="header">
@@ -15,6 +15,7 @@
         </th>
         <th>Year</th>
         <th>Status</th>
+        <th>Actions</th>
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-student>
@@ -25,6 +26,12 @@
         <td>{{ student.program }}</td>
         <td>{{ student.year }}</td>
         <td>{{ student.status }}</td>
+        <td>
+          <!-- <button pButton icon="pi pi-pencil" class="p-button-secondary"
+            [disabled]="loading"></button> -->
+          <button pButton icon="pi pi-trash" class="p-button-danger" (click)="deleteStudent(student.id)"
+            [disabled]="loading"></button>
+        </td>
       </tr>
     </ng-template>
     <ng-template pTemplate="emptymessage">
