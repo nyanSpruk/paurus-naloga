@@ -1,0 +1,54 @@
+<p-button (click)="showDialog()" label="Add Student" />
+<p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-grid">
+
+      <div class="form-field">
+        <label for="name">First Name *</label>
+        <input id="name" type="text" pInputText formControlName="name" placeholder="Enter first name"
+          [class.ng-invalid]="isFieldInvalid('name')" />
+        <p-message *ngIf="isFieldInvalid('name')" severity="error" [text]="getFieldError('name')"></p-message>
+      </div>
+
+      <div class="form-field">
+        <label for="lastname">Last Name *</label>
+        <input id="lastname" type="text" pInputText formControlName="lastname" placeholder="Enter last name"
+          [class.ng-invalid]="isFieldInvalid('lastname')" />
+        <p-message *ngIf="isFieldInvalid('lastname')" severity="error" [text]="getFieldError('lastname')"></p-message>
+      </div>
+
+      <div class="form-field">
+        <label for="program">Program *</label>
+        <p-select id="program" formControlName="program" [options]="programs" placeholder="Select a program"
+          [class.ng-invalid]="isFieldInvalid('program')"></p-select>
+        <p-message *ngIf="isFieldInvalid('program')" severity="error" [text]="getFieldError('program')"></p-message>
+      </div>
+
+      <div class="form-field">
+        <label for="year">Year *</label>
+        <p-select id="year" formControlName="year" [options]="years" placeholder="Select a year"
+          [class.ng-invalid]="isFieldInvalid('year')"></p-select>
+        <p-message *ngIf="isFieldInvalid('year')" severity="error" [text]="getFieldError('year')"></p-message>
+      </div>
+
+      <div class="form-field">
+        <label for="status">Status *</label>
+        <p-select id="status" formControlName="status" [options]="statuses" placeholder="Select status"
+          [class.ng-invalid]="isFieldInvalid('status')"></p-select>
+        <p-message *ngIf="isFieldInvalid('status')" severity="error" [text]="getFieldError('status')"></p-message>
+      </div>
+
+      <div class="form-field">
+        <label for="enrollment">Enrollment *</label>
+        <p-select id="enrollment" formControlName="enrollment" [options]="enrollments" placeholder="Select enrollment"
+          [class.ng-invalid]="isFieldInvalid('enrollment')"></p-select>
+        <p-message *ngIf="isFieldInvalid('enrollment')" severity="error"
+          [text]="getFieldError('enrollment')"></p-message>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <p-button type="submit" label="Submit" icon="pi pi-check" [disabled]="userForm.invalid"></p-button>
+    </div>
+  </form>
+</p-dialog>

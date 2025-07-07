@@ -2,10 +2,19 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { TableComponent } from './table/table.component';
+import { DialogModule } from 'primeng/dialog';
+import { AddmodalComponent } from './addmodal/addmodal.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonModule, TableComponent],
+  imports: [
+    RouterOutlet,
+    ButtonModule,
+    TableComponent,
+    AddmodalComponent,
+    CommonModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
