@@ -23,11 +23,14 @@ import {
   forkJoin,
 } from 'rxjs';
 import { SelectModule } from 'primeng/select';
+import { MultiSelectModule } from 'primeng/multiselect';
 import { ProgramService } from '../services/program.service';
 import { EnrollmentService } from '../services/enrollment.service';
 import { StatusService } from '../services/status.service';
 import { YearService } from '../services/year.service';
 import { LookupItem } from '../models/lookup-item';
+import { CourseService } from '../services/course.service';
+import { Course } from '../models/course';
 
 @Component({
   selector: 'app-addmodal',
@@ -42,6 +45,7 @@ import { LookupItem } from '../models/lookup-item';
     CalendarModule,
     MessageModule,
     DialogModule,
+    MultiSelectModule,
   ],
   templateUrl: './addmodal.component.html',
   styleUrl: './addmodal.component.css',
@@ -57,6 +61,7 @@ export class AddmodalComponent implements OnDestroy {
   years: LookupItem[] = [];
   statuses: LookupItem[] = [];
   enrollments: LookupItem[] = [];
+  courses: Course[] = [];
 
   private destroy$ = new Subject<void>();
 
@@ -78,6 +83,10 @@ export class AddmodalComponent implements OnDestroy {
     year: { label: 'Year', validators: [Validators.required] },
     status: { label: 'Status', validators: [Validators.required] },
     enrollment: { label: 'Enrollment', validators: [Validators.required] },
+    courses: {
+      label: 'Courses',
+      validators: [Validators.required, Validators.maxLength(5)],
+    },
   };
 
   constructor(
@@ -86,7 +95,8 @@ export class AddmodalComponent implements OnDestroy {
     private programService: ProgramService,
     private yearService: YearService,
     private statusService: StatusService,
-    private enrollmentService: EnrollmentService
+    private enrollmentService: EnrollmentService,
+    private courseService: CourseService
   ) {
     this.userForm = this.fb.group(this.buildFormControls());
   }
@@ -98,6 +108,7 @@ export class AddmodalComponent implements OnDestroy {
       years: this.yearService.getYears(),
       statuses: this.statusService.getStatuses(),
       enrollments: this.enrollmentService.getEnrollments(),
+      courses: this.courseService.getCourses(),
     })
       .pipe(takeUntil(this.destroy$))
       .subscribe({
@@ -106,6 +117,7 @@ export class AddmodalComponent implements OnDestroy {
           this.years = data.years;
           this.statuses = data.statuses;
           this.enrollments = data.enrollments;
+          this.courses = data.courses;
         },
         error: (error) => {
           console.error('Error loading lookup data:', error);
@@ -258,9 +270,9 @@ export class AddmodalComponent implements OnDestroy {
       if (field.errors['required']) return `${fieldLabel} is required.`;
       if (field.errors['email']) return 'Please enter a valid email.';
       if (field.errors['minlength'])
-        return `${fieldLabel} must be at least ${field.errors['minlength'].requiredLength} characters.`;
+        return `${fieldLabel} must be at least ${field.errors['minlength'].requiredLength}.`;
       if (field.errors['maxlength'])
-        return `${fieldLabel} cannot exceed ${field.errors['maxlength'].requiredLength} characters.`;
+        return `${fieldLabel} cannot exceed ${field.errors['maxlength'].requiredLength}.`;
       if (field.errors['pattern']) return 'Please enter a valid format.';
     }
     return '';

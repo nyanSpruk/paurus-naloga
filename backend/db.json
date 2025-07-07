@@ -855,54 +855,43 @@
       ]
     },
     {
-      "id": "7133",
-      "name": "Nik Test",
-      "lastname": "Test2",
+      "id": "98bc",
+      "name": "Test1",
+      "lastname": "Test1",
       "program": "Computer and Information Science",
-      "year": "2",
-      "status": "Inactive",
-      "enrollment": "Full-time",
-      "studentNumber": "63235494"
-    },
-    {
-      "id": "edd5",
-      "name": "Test3",
-      "lastname": "tset",
-      "program": "Computer and Information Science",
-      "year": "2",
-      "status": "Inactive",
-      "enrollment": "Part-time",
-      "studentNumber": "63219345"
-    },
-    {
-      "id": "aa17",
-      "name": "Test",
-      "lastname": "aaaa",
-      "program": "Digital Arts",
-      "year": "Extra",
+      "year": "1",
       "status": "Active",
       "enrollment": "Full-time",
-      "studentNumber": "63497139"
+      "courses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "studentNumber": "63286953"
     },
     {
-      "id": "f859",
-      "name": "test11",
-      "lastname": "aaa",
+      "id": "21a1",
+      "name": "asd",
+      "lastname": "asd",
       "program": "Computer and Information Science",
-      "year": "2",
+      "year": "1",
       "status": "Active",
       "enrollment": "Full-time",
-      "studentNumber": "63239689"
-    },
-    {
-      "id": "012f",
-      "name": "Ana",
-      "lastname": "anA",
-      "program": "Computer and Information Science",
-      "year": "2",
-      "status": "Active",
-      "enrollment": "Full-time",
-      "studentNumber": "63230884"
+      "courses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "studentNumber": "63253214"
     }
   ]
 }

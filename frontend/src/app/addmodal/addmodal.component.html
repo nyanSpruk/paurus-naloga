@@ -1,5 +1,6 @@
 <p-button (click)="showDialog()" label="Add Student" />
-<p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+<p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible"
+  [style]="{ width: '35rem', height: 'auto', minHeight: '40rem' }">
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <div class="form-grid">
 
@@ -45,6 +46,15 @@
         <p-message *ngIf="isFieldInvalid('enrollment')" severity="error"
           [text]="getFieldError('enrollment')"></p-message>
       </div>
+
+      <div class="form-field">
+        <label for="courses">Courses *</label>
+        <p-multiselect id="courses" formControlName="courses" [options]="courses" placeholder="Select courses"
+          [maxSelectedLabels]="2" display="chip" [class.ng-invalid]="isFieldInvalid('courses')" multiple="multiple"
+          optionLabel="name" optionValue="id"></p-multiselect>
+        <p-message *ngIf="isFieldInvalid('courses')" severity="error" [text]="getFieldError('courses')"></p-message>
+      </div>
+
     </div>
 
     <div class="form-actions">
