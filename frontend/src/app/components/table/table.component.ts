@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableModule, TableLazyLoadEvent } from 'primeng/table';
-import { Student } from '../models/student';
-import { StudentService } from '../services/student.service';
+import { Student } from '../../models/student';
+import { StudentService } from '../../services/student.service';
 import { ButtonModule } from 'primeng/button';
 import { IconFieldModule } from 'primeng/iconfield';
 import { ToolbarModule } from 'primeng/toolbar';

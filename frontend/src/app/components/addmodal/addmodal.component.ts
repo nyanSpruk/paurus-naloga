@@ -12,8 +12,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MessageModule } from 'primeng/message';
 import { CommonModule } from '@angular/common';
 import { CalendarModule } from 'primeng/calendar';
-import { StudentService } from '../services/student.service';
-import { Student } from '../models/student';
+import { StudentService } from '../../services/student.service';
+import { Student } from '../../models/student';
 import {
   Observable,
   Subject,
@@ -24,13 +24,13 @@ import {
 } from 'rxjs';
 import { SelectModule } from 'primeng/select';
 import { MultiSelectModule } from 'primeng/multiselect';
-import { ProgramService } from '../services/program.service';
-import { EnrollmentService } from '../services/enrollment.service';
-import { StatusService } from '../services/status.service';
-import { YearService } from '../services/year.service';
-import { LookupItem } from '../models/lookup-item';
-import { CourseService } from '../services/course.service';
-import { Course } from '../models/course';
+import { EnrollmentService } from '../../services/enrollment.service';
+import { StatusService } from '../../services/status.service';
+import { YearService } from '../../services/year.service';
+import { LookupItem } from '../../models/lookup-item';
+import { CourseService } from '../../services/course.service';
+import { Course } from '../../models/course';
+import { ProgramService } from '../../services/program.service';
 
 @Component({
   selector: 'app-addmodal',
