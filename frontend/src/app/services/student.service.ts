@@ -34,6 +34,17 @@ export class StudentService {
       );
   }
 
+  updateStudent(id: string, student: Student): Observable<Student> {
+    const url = `${this.apiUrl}/${id}`;
+
+    return this.http.put<Student>(url, student).pipe(
+      catchError((error) => {
+        console.error(`Error updating student with ID ${id}:`, error);
+        throw error;
+      })
+    );
+  }
+
   deleteStudent(id: string): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }

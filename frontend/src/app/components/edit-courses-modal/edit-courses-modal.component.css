@@ -1,0 +1,19 @@
+.edit-courses-dialog {
+  width: 25rem;
+  min-height: 40rem;
+}
+
+.dialog-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 25rem;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: left;
+  margin-top: auto;
+  /* This is the key change */
+  gap: 1rem;
+}

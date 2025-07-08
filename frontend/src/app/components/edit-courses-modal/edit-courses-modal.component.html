@@ -1,0 +1,19 @@
+<p-dialog header="Edit Courses" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem', minHeight: '30rem' }"
+  (onHide)="hideDialog()" styleClass="edit-courses-dialog">
+  <form [formGroup]="editCoursesForm" (ngSubmit)="onSubmit()" class="dialog-content">
+    <div class="form-field">
+      <label for="courses">Courses *</label>
+      <p-multiselect id="courses" formControlName="courses" [options]="courses" placeholder="Select courses"
+        [maxSelectedLabels]="2" display="chip" [class.ng-invalid]="isFieldInvalid('courses')" multiple="multiple"
+        optionLabel="name" optionValue="id"></p-multiselect>
+      <p-message *ngIf="isFieldInvalid('courses')" severity="error" [text]="getFieldError('courses')"></p-message>
+      <p-message *ngIf="errorMessage" severity="error" [text]="errorMessage" />
+    </div>
+
+    <div class="dialog-footer">
+      <p-button label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></p-button>
+      <p-button type="submit" label="Update Courses" icon="pi pi-check"
+        [disabled]="editCoursesForm.invalid || editCoursesForm.pending"></p-button>
+    </div>
+  </form>
+</p-dialog>
